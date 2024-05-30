@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .stickyheader {
+            position: sticky;
+            top: 0;
+            background-color: white;
+            z-index: 2;
+        }
+
+        .stickyheader .logo {
+
+            position: relative;
+            left: 30%;
+        }
+
+        .stickyheader .logo img {
+            width: 200px;
+            height: 50px;
+            margin-left: 10px 0px;
+        }
+
+        .clearunderlogo {
+            clear: both;
+        }
+
+        .nav {
+            position: relative;
+            left: 4%;
+        }
+
+        .nav ul {
+            list-style-type: none;
+            margin-left: 80px;
+        }
+
+        .nav ul li a {
+            text-decoration: none;
+            display: block;
+        }
+
+        .nav ul li a:hover {
+            border-bottom: 2px purple solid;
+        }
+
+        #checked {
+            border-bottom: 2px purple solid;
+        }
+
+        .nav ul li {
+
+            display: inline-block;
+            margin: 2px;
+            margin-right: 10px;
+        }
+
+        .webtitlecontainer {
+            width: 100%;
+            text-align: center;
+            height: 180px;
+            color: white;
+            background-image: url(ai.gif);
+            margin-bottom: 50px;
+        }
+
+        .title{
+            width: 400px;
+            margin: auto;
+        }
+
+        .webimage {
+            margin-bottom: 40px;
+        }
+        .webtitlecontainer h1{
+            /* margin-bottom: 180px; */
+            padding-top: 68px;
+        }
+        .webimage img {
+            width: 80%;
+            margin-left: 45px;
+        }
+        .back img{
+            width: 50px;
+        }
+        .back{
+            position: relative;
+            top: 20px;
+            width: 60px;
+        }
+        .description {
+            border-left: 4px solid purple;
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 40px;
+            margin-bottom: 40px;
+            font-size: 17px;
+        }
+
+        .syllabus .first {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .syllabus .second {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .syllabus .third {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .syllabus .forth {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .syllabus .fifth {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .syllabus .six {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .syllabus .seven {
+            width: 80%;
+            margin: auto;
+            background-color: #ece6e6;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .price {
+            position: relative;
+            left: 205px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .price p{
+            width: 70px;
+            background-color: purple;
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+        }
+        .register a{
+            text-decoration: none;
+            color: white;
+            background-color: purple;
+            padding: 10px;
+            border-radius: 8px;
+            width: 50px;
+        }
+        .register{
+            position: relative;
+            left: 10px;
+            text-align: center;
+        }
+        .footer .footernav .navlist a {
+            color: white;
+        }
+
+        .footer .footernav .navlist div {
+            float: left;
+        }
+
+        .footer .footernav .navlist ul li a {
+            color: white;
+        }
+
+        .footer div {
+            margin: 20px 0;
+        }
+
+        .footer {
+            background-color: rgb(101, 101, 144);
+            color: white;
+        }
+
+        .footer .nameoficon a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer .nameoficon a:hover {
+            text-decoration: underline;
+            color: purple;
+        }
+
+        .footer input {
+            border: 1px white solid;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .footer .nameoficon {
+            margin-top: -10px;
+            margin-left: 30px;
+        }
+
+        .footer .footernav .navlist {
+            margin-top: -50px
+        }
+
+        .footer .footernav {
+            margin-top: 40px
+        }
+
+        .footer .footercontact {
+            position: relative;
+            bottom: 20px;
+        }
+
+        .footer .footercontact h2 {
+            padding: 15px;
+        }
+
+        .footer .clear {
+            clear: both;
+        }
+
+        .footer .footerlogo img {
+            width: 250px;
+            margin-left: 20px;
+        }
+
+        .footer .footersocialmedia {
+            margin-left: 20px;
+        }
+
+        .footer .footersocialmedia img {
+            width: 30px;
+            border: 1px yellow solid;
+            border-radius: 50%;
+            padding: 5px;
+        }
+
+        .footer .footernav .titlenav {
+            margin-left: 20px;
+        }
+
+        .footer .footersocialmedia {
+            margin-top: 20px;
+        }
+
+        .footer .footersocialmedia h3 {
+            padding-bottom: 10px;
+
+        }
+
+        .footer .footernav .navlist {
+            margin-left: 25px;
+        }
+
+        .footer .footernav .navlist ul {
+            list-style-type: none;
+        }
+
+        .footer .footernav .navlist ul li {
+            margin: 20px;
+        }
+
+        .footer .footernav .navlist ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer .footernav .navlist ul li a:hover {
+            color: purple;
+        }
+        .footer .footerconca{
+        margin-left: 40px;
+    }
+        .footer .footercontact {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer .nameoficon img {
+            width: 20px;
+            margin-top: 5px;
+        }
+        .footer .newsteller{
+    width: 350px;
+    position: relative;
+    left: 40px;
+    border-radius: 8px;
+    display: inline;
+}
+        .footer .newsteller button{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(183, 0, 255);
+}
+.footer .footersocialmedia img:hover{
+    transform: scale(1.09);
+    border: 1px solid purple;
+}
+        @media only screen and (min-width: 768px){
+            .stickyheader .logo{
+        position: relative;
+        left: 30px;
+    }
+    .stickyheader{
+        display: flex;
+    }
+    .stickyheader .nav{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .stickyheader .nav ul li {
+        margin-right: 20px;
+    }
+    .price{
+        position: relative;
+            left: 345px;
+    }
+    .webimage{
+        position: relative;
+        left: 20px;
+    }
+
+        }
+        @media only screen and (min-width: 1025px){
+            .stickyheader .nav{
+        margin-top: 10px;
+        margin-left: 550px;
+    }
+    .stickyheader .nav li a{
+        margin-right: 20px
+    }
+    .webimage img{
+        width: 700px;
+    }
+    .webimage{
+        position: relative;
+        left: 380px;
+    }
+    .description{
+        height: 80px;
+        padding: 20px;
+        padding-top: 40px;
+        font-size: 17px;
+    }
+    .syllabus h2{
+        padding-left: 100px;
+        padding-bottom: 20px;
+    }
+    .price{
+        position: relative;
+        left: 725px;
+    }
+    .register{
+        margin-bottom: 20px;
+    }
+    .footer .footerconca{
+        width: 30%;
+        float: left;
+    }
+    .footer{
+        height: 500px;
+    }
+    .footer .footernav{
+        float: left;
+        width: 30%;
+        margin-left: 140px;
+        margin-left: -8px;
+    }
+    .footer .footercontact{
+        float: left;
+        position: relative;
+        bottom: 234px;
+        left: 900px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    .footer .newsteller{
+        float: right;
+        position: relative;
+        bottom: 230px;
+        right: 20px;
+    }
+    .footer .footerconca{
+        margin-left: 40px;
+    }
+    .clear{
+        clear: both;
+    }
+        }
+    </style>
+    
+</head>
+
+<body>
+    <div class="stickyheader">
+        <div class="logo">
+            <a href="test2.html"><img src="logo-white.png" alt=""></a>
+        </div>
+
+
+        <div class="nav">
+
+            <ul>
+                <li><a href="test2.html">Home</a></li>
+                <li><a href="services.html">Service</a></li>
+                <li><a href="courses.html" id="checked">Courses</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="webtitlecontainer">
+        <!-- <div class="back">
+            <a href="courses.html"><img src="back.jpeg" alt=""></a>
+        </div> -->
+        <div class="title">
+            <h1>Welcome to Web</h1>
+        </div>
+    </div>
+    <div class="webimage">
+        <img src="webcoursepage.jpeg" alt="">
+    </div>
+    <div class="description">
+        <p>Our Full-Stack Web Development course covers HTML, CSS, JavaScript, and Angular for frontend development. On
+            the backend, you'll learn PHP, MySQL, and Laravel to build secure and scalable web applications. Gain the
+            skills to create dynamic interfaces and robust server-side functionalities in this comprehensive program.
+        </p>
+    </div>
+    <div class="syllabus">
+        <h2>Syllabus</h2>
+        <div class="first">
+            <h3>HTML</h3>
+            <p>Overview of web development technologies</p>
+            <p>Introduction to HTML: Basic structure, tags, and elements
+            </p>
+            <p>Learning most HTML tags and their usage
+            </p>
+            <p>Semantic HTML for better accessibility and SEO
+            </p>
+        </div>
+        <div class="second">
+            <h3>CSS</h3>
+            <p>Introduction to CSS: Selectors, properties, and values
+            </p>
+            <p>CSS Grid and Flexbox for layout design
+            </p>
+            <p>Keyframes and animations
+            </p>
+            <p>Media queries for responsive design
+            </p>
+        </div>
+        <div class="third">
+            <h3>Javascript</h3>
+            <p>Basics of JavaScript: Variables, data types, and operators <br>
+                DOM manipulation: Selecting elements, changing content, and styling<br>
+                Working with arrays, objects, and functions <br>
+                Event handling: Event listeners and handling user interactions<br>
+                AJAX and API Integration: Making API calls, URL GET requests, and handling JSON data <br></p>
+        </div>
+        <div class="forth">
+            <h3>PHP</h3>
+            <p>Basics of PHP: Syntax, variables, and data types <br>
+                Working with forms and processing user input <br></p>
+        </div>
+        <div class="fifth">
+            <h3>MYSQL</h3>
+            <p>Setting up Laravel environment <br>
+                MVC architecture in Laravel and routing <br>
+                Laravel Models and Relationships: Creating models, defining relationships, working with migrations and
+                seeders <br>
+                Laravel Views and Blade Templating: Using Blade templating engine, creating dynamic views with data from
+                the database <br></p>
+        </div>
+        <div class="six">
+            <h3>Angular</h3>
+            <p>Introduction to Angular: Components, modules, and services <br>
+                Setting up Angular environment and creating a basic project <br>
+                Data binding: One-way and two-way binding <br>
+                Routing in Angular for single-page applications <br>
+                Angular Forms and HTTP: Building forms, making HTTP requests <br></p>
+        </div>
+        <div class="seven">
+            <h3>Final Project</h3>
+            <p>Integrating frontend and backend technologies <br>
+                Building a full-stack web application using the skills learned throughout the course <br></p>
+        </div>
+    </div><!--End of syllabus-->
+    <div class="price">
+        <p><Price:3001></Price:3001></p>
+    </div>
+    <div class="register">
+        <p><a href="register.html">Register</a></p>
+    </div>
+
+    
+
+    <div class="footer">
+        <div class="footerconca">
+            <div class="footerlogo">
+                <img src="logo-white.png" alt="">
+                <h4>We Don't Just Follow Trends; We Create Buzz</h4>
+            </div>
+            <div class="footersocialmedia">
+                <h3>Follow us on social media</h3>
+                <a href=""><img src="facebook.png" alt=""></a>
+                <a href=""><img src="instagram.jpeg" alt=""></a>
+                <a href=""><img src="tiktok.png" alt=""></a>
+                <a href=""><img src="twitter.png" alt=""></a>
+            </div>
+        </div>
+
+
+       
+        <div class="footernav">
+            <div class="titlenav">
+                <h2>Quick Navigation</h2>
+            </div><!--End of tiltle nav-->
+            <div class="navlist">
+                <div class="firstnavgroup">
+                    <ul>
+                        <li><a href="test2.html">Home</a></li>
+                        <li><a href="services.html">Service</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                    </ul>
+                </div> <!--Enf of first nav group-->
+                <div class="secondnavgroup">
+                    <ul>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </div> <!--End of secondnavlist-->
+            </div> <!--End of nav list-->
+        </div><!--End of footer nav-->
+        <div class="clear"></div>
+        <div class="footercontact">
+            <h2>Contact</h2>
+            <!-- </div>end footercontact -->
+            <!-- <div class="concat"> -->
+            <!-- <div class="locphoneicons">
+        <img src="loc.png" alt="">
+        <br>
+        <img src="phone.png" alt="">
+        
+    </div> -->
+            <div class="nameoficon">
+                <p>Location: Nabatieh</p>
+                <p>Phone:+961 3 668 091</p>
+                <a href="mailto:info@youbee.ai" id="mail">Email us</a>
+
+            </div>
+        </div>
+
+        <div class="newsteller">
+            <h2>Join our newsteller</h2>
+            <input type="email" placeholder="Email Address">
+            <button>Join</button>
+        </div>
+
+    </div> <!--End of concat-->
+</div><!--End of footer-->
+</body>
+
+</html>

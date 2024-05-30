@@ -1,0 +1,729 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.stickyheader{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+}
+.stickyheader .logo{
+    
+    position: relative;
+    left: 30%;
+}
+
+.stickyheader .logo img{
+    width: 200px;
+    height: 50px;
+    margin-left: 10px 0px;
+    margin-top: 5px;
+}
+
+.clearunderlogo{
+    clear: both;
+}
+.nav{
+  position: relative;
+  left: 3%;
+}
+.nav ul{
+    list-style-type: none;
+    margin-left: 80px;
+}
+.nav ul li a{
+    text-decoration: none;
+    display: block;
+}
+.nav ul li a:hover{
+    border-bottom: 2px purple solid;
+}
+#checked{
+    border-bottom: 2px purple solid;  
+}
+.nav ul li{
+    
+    display: inline-block;
+    margin : 2px;
+    margin-right: 10px;
+}
+.main{
+    margin: 10px;
+}
+.main .welcome{
+    margin-top: 50px;
+    width: 80%;
+    color: white;
+    margin: 60px auto;
+    border: 2px black solid;
+    padding: 30px;
+    background-image: url(aiwelcomehome.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.70s ;
+}
+.main .welcome:hover{
+    transform: scale(1.1);
+}
+.main .welcome h2{
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main h4{
+    color: purple;
+}
+.main .programs {
+   
+    border-radius: 30px;
+ }
+ .main .programs .cyber:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 17px;
+ }
+ .main .programs .web:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-size: 17px;
+        
+ }
+ .main .programs .ai:hover{
+    transform: scale(1.01);
+    transition: 0.3s;
+    font-size: 17px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+.main .programs ul{
+   list-style-type: none;
+}
+.main .programs div{
+    margin-bottom: 40px;
+}
+.main .programs ul li a{
+    text-decoration: none;
+   background-color: blue;
+   color: yellow;
+   padding: 10px;
+}
+.main .programs ul li a:hover{
+    text-decoration: underline;
+}
+.main .programs h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main .web .webimage{
+    width: 80%;
+    margin: auto;
+    border: 2px white solid
+    margin-bottom: 20px;
+    margin-left: -5px;
+}
+.main .web .webimage img{
+    width: 381px;
+    height: 230px;
+}
+.main .web{
+    background-color: #ece6e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main .web .webinfo{
+    width: 80%;
+    margin: auto;
+}
+.main .web .webinfo .weblearnmore{
+    position: relative;
+    left: 140px;
+    top: 15px;
+}
+.main .web .webinfo .weblearnmore ul{
+    list-style-type: none;
+}
+.main .web .webinfo .weblearnmore ul li a{
+   text-decoration: none;
+   background-color: blue;
+   color: orange;
+   padding: 10px;
+   border: 1px blue solid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.main .web .webinfo .weblearnmore ul li a:hover{
+    text-decoration: underline;
+ }
+.main .cyber{
+    background-color: #ece6e6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main .cyber .cyberimage{
+    width: 80%;
+    margin: auto;
+    
+    margin-bottom: 20px;
+}
+.main .cyber .cyberimage img{
+    width: 380px;
+}
+.main .cyber .cyberinfo{
+    width: 80%;
+    margin: auto;
+}
+.main .cyber .cyberinfo .cyberlearnmore{
+    position: relative;
+    left: 140px;
+    top: 15px;
+}
+.main .cyber .cyberinfo .cyberlearnmore a{
+    border: 1px blue solid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.main .ai{
+    background-color: #ece6e6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.main .ai .aiimage{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.main .ai .aiinfo .ailearnmore a{
+    border: 1px blue solid;
+    border-radius: 20px;
+    font-size: 15px;
+}
+.main .ai .aiinfo .ailearnmore{
+    position: relative;
+    left: 140px;
+    top: 15px;
+    
+}
+.main .ai .aiimage img{
+    width: 381px;
+}
+.main .ai .aiinfo{
+    width: 80%;
+    margin: auto;
+}
+.webandseller{
+    display: flex;
+}
+.main .programs .exploremore ul li a{
+    border: 1px blue solid;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.main .programs .exploremore{
+    position: relative;
+    left: 85px;
+    top: 30px;
+}
+.main .services {
+    margin-top: 100px;
+    background-image: url();
+   
+}
+.main .services div{
+    margin-bottom: 30px;
+}
+.main .services .welcomingservice{
+    position: relative;
+    left: 180px;
+}
+
+.main .services .softwareservices{
+    background-image: url();
+    border-radius: 20px;
+   
+}
+.main .services .softwareservices{
+    padding: 20px;
+    background-color: #ece6e6;
+    border-radius: 20px;
+    
+}
+.main .services .softwareservices .softwareservicesimage{
+    position: relative;
+    left: 180px;
+}
+.main .services .softwareservices .softwareservicesimage img{
+    width: 100px;
+}
+/* .main .services .softwareservices :hover{
+    font-weight: bold;
+    font-size: 20px;
+}
+.main .services .onlinecourses :hover{
+    font-weight: bold;
+    font-size: 20px;
+} */
+.main .services .onlinecourses{
+   background-color: #ece6e6;
+   padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.main .services .onlinecourses .onlinecoursesimage img{
+    width: 150px;
+}
+.main .services .onlinecourses .onlinecoursesimage{
+    position: relative;
+    left: 160px;
+}
+
+.main .services .digitalmarketing{
+    padding: 20px;
+    background-color: #ece6e6;
+    border-radius: 20px;
+}
+.main .services .digitalmarketing .digitalmarketingimage{
+    position: relative;
+    left: 170px;
+}
+.main .services .digitalmarketing .digitalmarketingimage img{
+    width: 100px;
+}
+/* .main .services .cybersecurity :hover{
+    font-weight: bold;
+    font-size: 20px;
+} */
+.main .services .cybersecurity{
+    padding: 20px;
+    background-color: #ece6e6;
+    border-radius: 20px;
+}
+.main .services .cybersecurity .cybersecurityimage{
+    position: relative;
+    left: 170px;
+}
+.main .services .cybersecurity .cybersecurityimage img{
+    width: 100px;
+}
+.main .services .exploremoreservices{
+    text-align: center;
+}
+.main .services .exploremoreservices {
+    background-color: green;
+    text-decoration: none;
+    width: 200px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.main .services .exploremoreservices a{
+    text-decoration: none;
+    color: white;
+}
+.main .services .exploremoreservices a:hover{
+    text-decoration: underline;
+}
+.main .fixedcontact{
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    z-index: 2;
+}
+.main .fixedcontact img{
+    width: 60px;
+    border: green solid 1px;
+    border-radius: 60%;
+}
+.footer .footerlogo img{
+    width: 250px;
+    margin-left: 20px;
+}
+.footer .footersocialmedia{
+    margin-left: 20px;
+}
+
+.footer .footersocialmedia img:hover{
+    transform: scale(1.09);
+    border: 1px solid purple;
+}
+.footer .footersocialmedia img{
+    width: 30px;
+    border: 1px yellow solid;
+    border-radius: 50%;
+    padding: 5px;
+}
+.footer .footernav .titlenav{
+    margin-left: 20px;
+}
+.footer .footersocialmedia{
+    margin-top: 20px;
+}
+.footer .footersocialmedia h3{
+    padding-bottom: 10px;
+    
+}
+.footer .footernav .navlist{
+    margin-left: 25px;
+}
+.footer .footernav .navlist ul{
+    list-style-type: none;
+}
+.footer .footernav .navlist ul li{
+    margin: 20px;
+}
+.footer .footernav .navlist ul li a{
+    text-decoration: none;
+    color: purple;
+}
+.footer .footernav .navlist ul li a:hover{
+    color: purple;
+}
+.footer .footercontact{
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+.footer .nameoficon img{
+    width: 20px;
+    margin-top: 5px;
+}
+.main .hiring .hiringimage img{
+    width: 100%;
+}
+.main .hiring .hiringimage {
+    width: 100%;
+}
+.main .hiring .hiringinfo h2{
+    color: purple;
+    text-align: center;
+    padding: 20px;
+}
+.main .hiring .hiringinfo p{
+    width: 80%;
+    margin: auto;
+    color: #6F7F8B;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.footer .footernav .navlist a{
+    color: white;
+}
+.footer .footernav .navlist div{
+    float: left;
+}
+.footer .footernav .navlist ul li a{
+    color: white;
+}
+.footer div{
+    margin: 20px 0;
+}
+
+.footer{
+    background-color: rgb(101, 101, 144);
+    color: white;
+    margin: 0px;
+    margin-left: 0px;
+    padding: 0px;
+}
+.footer .nameoficon a{
+    text-decoration: none;
+    color: white;
+}
+.footer .nameoficon a:hover{
+    text-decoration: underline;
+    color: purple;
+}
+.footer input{
+    border: 1px white solid;
+    border-radius: 8px;
+    padding: 20px;
+}
+.footer .nameoficon{
+    margin-top: -10px;
+    margin-left: 30px;
+}
+.footer .footernav .navlist{
+    margin-top: -50px
+}
+.footer .footernav{
+    margin-top: 40px
+}
+.footer .footercontact{
+    position: relative;
+    bottom: 20px;
+}
+.footer .footercontact h2{
+ padding: 15px;
+}
+.footer .clear{
+    clear: both;
+}
+.footer .newsteller{
+    width: 350px;
+    position: relative;
+    left: 40px;
+    border-radius: 8px;
+    display: inline;
+}
+.footer .newsteller button{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgb(183, 0, 255);
+}
+.footer .newsteller h2{
+    font-size: 22px;
+}
+.main .hiring .learnmore a{
+    text-decoration: none;
+    color: white;
+    background-color: purple;
+    padding: 15px;
+    border-radius: 20px;
+}
+.main .hiring .learnmore a:hover{
+    text-decoration: underline;
+}
+.main .hiring .learnmore{
+    position: relative;
+    left: 200px;
+    margin-bottom: 25px;
+}
+@media only screen and (min-width: 768px) {
+    .stickyheader .logo{
+        position: relative;
+        left: 30px;
+    }
+    .stickyheader{
+        display: flex;
+    }
+    .stickyheader .nav{
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+    .stickyheader .nav ul li {
+        margin-right: 20px;
+    }
+    .main .welcome{
+        height: 300px;
+        padding: 30px;
+        align-content: center;
+    }
+    
+    .main .programs .web .weblearnmore a{
+        right: 100px;
+    }
+    .main .programs .cyberlearnmore{
+        position: relative;
+        top: 30px;
+        right: 30px;
+    }
+    .main .programs .ailearnmore{
+        position: relative;
+        top: 0px;
+        right: 30px;
+    }
+    .main .programs .web{
+        display: flex;
+    }
+    .main .programs .web .webandseller{
+        margin-top: 30px;
+    }
+    .main .programs .webimage{
+        width: 400px;
+    }
+    .main .programs .webimage img{
+        width: 400px;
+        border: 2px white solid
+    }
+    .main .programs .web .webinfo{
+        margin-left: 20px;
+    }
+    
+    .main .web .webinfo .weblearnmore{
+        position: relative;
+        left: 150px;
+    }
+    .main .programs .cyber{
+        display: flex;
+        height: 300px;
+    }
+    .main .programs .cyberimage img{
+        width: 450px;
+        
+    }
+    .main .programs .cyberimage {
+        position: relative;
+        bottom:40px ;
+        width: 450px;
+        border: 2px white solid;
+    }
+    .main .programs .cyber .cyberinfo{
+        margin-left: 20px;
+    }
+    .main .programs .ai{
+        display: flex;
+        height: 300px;
+    }
+    .main .programs .aiimage{
+        width: 450px; 
+        border: 2px white solid;
+        position: relative;
+        bottom: 20px;
+    }
+    .main .programs .aiimage img{
+        width: 450px;
+        position: relative;
+        top: 5px;
+       
+    }
+    .main .programs .ai .aiinfo{
+        margin-left: 20px;
+    }
+    .main .programs .exploremore{
+        left: 230px;
+    }
+    .main .services .welcomingservice{
+        position: relative;
+        left: 345px;
+    }
+    
+    .main .services .firstgroup div{
+        margin-right: 5px;
+    }
+    .main .services .firstgroup{
+        display: flex;
+    }
+    .main .services .secondgroup div{
+        margin-right: 5px;
+    }
+    .main .services .secondgroup{
+        display: flex;
+       
+    }
+    /* .main .services .softwareservices p:hover{
+        font-weight: bold;
+    } */
+    .main .services .softwareservices .softwareservicesimage{
+        margin-left: -50px;
+    }
+    /* .main .services  .onlinecourses :hover{
+        font-weight: bold;
+    } */
+    .main .services  .onlinecourses .onlinecoursesimage{
+        margin-left: -40px ;
+    }
+    .main .services .digitalmarketing .digitalmarketingimage{
+        margin-left: -60px;
+    }
+    .main .services .cybersecurity .cybersecurityimage{
+        margin-left: -30px
+    }
+    .main .hiring .learnmore{
+        position: relative;
+        left: 330px;
+    }
+}
+@media only screen and (min-width: 1025px){
+    .stickyheader .nav{
+        margin-top: 10px;
+        margin-left: 550px;
+    }
+    .stickyheader .nav li a{
+        margin-right: 20px
+    }
+    .web{
+        width: 900px;
+        margin: auto;
+    }
+    .cyber{
+        width: 900px;
+        margin: auto;
+    }
+    .ai{
+        width: 900px;
+        margin: auto;
+    }
+    .exploremore{
+        margin-left: 355px;
+        
+    }
+    .main .services .softwareservices .softwareservicesimage{
+        position: relative;
+        left: 300px;
+    }
+    .main .services .onlinecourses .onlinecoursesimage{
+        position: relative;
+        left: 300px;
+    }
+    .main .services .digitalmarketing .digitalmarketingimage{
+        position: relative;
+        left: 300px;
+    }
+    .main .services .cybersecurity .cybersecurityimage{
+        position: relative;
+        left: 300px;
+    }
+    .main .services .welcomingservice{
+            position: relative;
+            left: 670px;
+    }
+    .main .hiring .hiringimage img{
+        width: 50%;
+        float: left;
+        margin-bottom: 40px;
+    }
+    .main .hiring .hiringinfo{
+        width: 50%;
+        float: left;
+        margin-top: 50px;
+    }
+    .main .hiring .learnmore{
+        position: relative;
+        top: 50px;
+        left: 350px;
+    }
+    .footer .footerconca{
+        width: 30%;
+        float: left;
+    }
+    .footer{
+        height: 500px;
+    }
+    .footer .footernav{
+        float: left;
+        width: 30%;
+        margin-left: 140px;
+        margin-left: -8px;
+    }
+    .footer .footercontact{
+        float: left;
+        position: relative;
+        bottom: 234px;
+        left: 900px;
+        margin-top: 10px;
+        margin-left: -10px;
+    }
+    .footer .newsteller{
+        float: right;
+        position: relative;
+        bottom: 230px;
+    }
+    .footer .footerconca{
+        margin-left: 40px;
+    }
+    .clear{
+        clear: both;
+    }
+}
